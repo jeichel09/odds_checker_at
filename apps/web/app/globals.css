@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Sports Palette - Strong contrast with clear separation */
+    --background: 229 231 235;  /* Light gray background #E5E7EB for clear contrast */
+    --foreground: 17 24 39;     /* Dark text #111827 */
+
+    --card: 0 0% 100%;          /* Pure white cards with strong contrast */
+    --card-foreground: 17 24 39; /* Dark text on white cards */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 17 24 39;
+
+    --primary: 30 64 175;       /* Royal Blue #1E40AF */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 5 150 105;     /* Forest Green #059669 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 243 244 246;       /* Light muted areas #F3F4F6 */
+    --muted-foreground: 75 85 99; /* Dark gray text #4B5563 */
+
+    --accent: 234 88 12;        /* Orange #EA580C */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 220 38 38;   /* Red for errors */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 229 231 235;      /* Light border #E5E7EB */
+    --input: 229 231 235;
+    --ring: 30 64 175;          /* Royal blue focus ring */
+
+    --radius: 0.5rem;
+    
+    /* Custom sports betting colors with high contrast */
+    --success: 22 163 74;       /* Strong green for best odds #16A34A */
+    --warning: 234 88 12;       /* Orange for good odds #EA580C */
+    --error: 220 38 38;         /* Red for poor odds #DC2626 */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for odds table with Premium Sports colors - High contrast */
+.odds-cell {
+  @apply transition-all duration-300 hover:bg-blue-50 cursor-pointer rounded-lg border border-gray-200 hover:border-blue-300;
+}
+
+.best-odds {
+  @apply bg-green-50 border-green-300 text-green-900 font-bold shadow-md;
+  background: linear-gradient(135deg, rgb(22 163 74 / 0.15) 0%, rgb(22 163 74 / 0.08) 100%);
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.1);
+}
+
+.good-odds {
+  @apply bg-orange-50 border-orange-300 text-orange-900 font-semibold shadow-sm;
+  background: linear-gradient(135deg, rgb(234 88 12 / 0.15) 0%, rgb(234 88 12 / 0.08) 100%);
+}
+
+.poor-odds {
+  @apply bg-red-50 border-red-300 text-red-800;
+}
+
+/* Sports-themed enhancements */
+.sports-gradient {
+  background: linear-gradient(135deg, #1E40AF 0%, #059669 50%, #EA580C 100%);
+}
+
+.premium-card {
+  @apply bg-white border-2 border-gray-300 shadow-2xl hover:shadow-2xl;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bookmaker-row:hover {
+  @apply bg-gradient-to-r from-blue-50 to-green-50 transform scale-[1.01] shadow-md border-blue-200;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Sports accent */
+.sports-accent {
+  border-left: 4px solid #1E40AF;
+}
+
+/* High contrast backgrounds and elements */
+.contrast-bg {
+  @apply bg-white border-2 border-gray-400 shadow-xl;
+}
+
+.contrast-text {
+  @apply text-gray-900 font-medium;
+}
+
+/* Strong visual separation */
+.separated-content {
+  @apply bg-white border-2 border-gray-300 shadow-lg rounded-lg;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Background pattern for better distinction */
+body {
+  background-color: #E5E7EB;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0);
+  background-size: 20px 20px;
+}

@@ -1,0 +1,128 @@
+﻿{
+    "source":  "RapidAPI - Free Live Football Data",
+    "weekendMatches":  [
+                           {
+                               "id":  "4832222",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-04T17:00:00",
+                               "utcTime":  "2025-10-04T15:00:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "BW Linz",
+                                                "id":  "2433"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "Austria Wien",
+                                                "id":  "10011"
+                                            }
+                           },
+                           {
+                               "id":  "4832223",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-04T17:00:00",
+                               "utcTime":  "2025-10-04T15:00:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "Wolfsberger AC",
+                                                "id":  "1954"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "Grazer AK",
+                                                "id":  "10012"
+                                            }
+                           },
+                           {
+                               "id":  "4832225",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-04T17:00:00",
+                               "utcTime":  "2025-10-04T15:00:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "WSG Tirol",
+                                                "id":  "1583"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "Ried",
+                                                "id":  "10017"
+                                            }
+                           },
+                           {
+                               "id":  "4832221",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-05T14:30:00",
+                               "utcTime":  "2025-10-05T12:30:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "Sturm Graz",
+                                                "id":  "10014"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "Altach",
+                                                "id":  "10008"
+                                            }
+                           },
+                           {
+                               "id":  "4832224",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-05T14:30:00",
+                               "utcTime":  "2025-10-05T12:30:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "Hartberg",
+                                                "id":  "10056"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "LASK",
+                                                "id":  "9977"
+                                            }
+                           },
+                           {
+                               "id":  "4832226",
+                               "status":  {
+                                              "cancelled":  false,
+                                              "started":  false,
+                                              "finished":  false
+                                          },
+                               "localTime":  "2025-10-05T17:00:00",
+                               "utcTime":  "2025-10-05T15:00:00Z",
+                               "awayTeam":  {
+                                                "score":  0,
+                                                "name":  "Rapid Wien",
+                                                "id":  "10015"
+                                            },
+                               "homeTeam":  {
+                                                "score":  0,
+                                                "name":  "Salzburg",
+                                                "id":  "10013"
+                                            }
+                           }
+                       ],
+    "leagueId":  38,
+    "leagueName":  "Austrian Bundesliga",
+    "timestamp":  "2025-10-01T20:34:49Z"
+}

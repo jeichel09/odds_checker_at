@@ -1,0 +1,27 @@
+{
+  "name": "sportwetten-quoten-at",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Austrian Sportwetten Quoten - Compare betting odds across Austrian bookmakers",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo clean",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push",
+    "db:seed": "turbo db:seed"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.12",
+    "prettier": "^3.0.3",
+    "@types/node": "^20.5.2",
+    "typescript": "^5.1.6"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@9.8.1"
+}

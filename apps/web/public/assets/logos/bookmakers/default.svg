@@ -1,0 +1,11 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Default bookmaker placeholder -->
+  <rect width="120" height="60" fill="#1E40AF" rx="6"/>
+  
+  <!-- Placeholder text -->
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="white">Bookmaker</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="20" cy="15" r="4" fill="white" opacity="0.6"/>
+  <circle cx="100" cy="45" r="3" fill="white" opacity="0.6"/>
+</svg>

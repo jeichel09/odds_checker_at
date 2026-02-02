@@ -1,0 +1,124 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model League {
+  id          String   @id @default(cuid())
+  name        String
+  country     String
+  logoUrl     String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  matches     Match[]
+  
+  @@map("leagues")
+}
+
+model Team {
+  id          String   @id @default(cuid())
+  name        String
+  shortName   String?
+  logoUrl     String?
+  country     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  homeMatches Match[] @relation("HomeTeam")
+  awayMatches Match[] @relation("AwayTeam")
+  
+  @@map("teams")
+}
+
+model Bookmaker {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  displayName String
+  logoUrl     String?
+  websiteUrl  String?
+  isActive    Boolean  @default(true)
+  country     String   @default("AT") // Focus on Austrian bookmakers
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  odds        Odds[]
+  
+  @@map("bookmakers")
+}
+
+model Match {
+  id            String    @id @default(cuid())
+  homeTeamId    String
+  awayTeamId    String
+  leagueId      String
+  kickoffTime   DateTime
+  status        MatchStatus @default(UPCOMING)
+  homeScore     Int?
+  awayScore     Int?
+  round         String?
+  season        String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  homeTeam      Team     @relation("HomeTeam", fields: [homeTeamId], references: [id])
+  awayTeam      Team     @relation("AwayTeam", fields: [awayTeamId], references: [id])
+  league        League   @relation(fields: [leagueId], references: [id])
+  odds          Odds[]
+  
+  @@index([kickoffTime])
+  @@index([leagueId])
+  @@map("matches")
+}
+
+model Odds {
+  id           String     @id @default(cuid())
+  matchId      String
+  bookmakerId  String
+  marketType   MarketType
+  outcome      String     // e.g., "HOME", "DRAW", "AWAY", "OVER", "UNDER", "YES", "NO"
+  odds         Float      // Decimal odds (e.g., 2.50)
+  isAvailable  Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  
+  // Relations
+  match        Match      @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  bookmaker    Bookmaker  @relation(fields: [bookmakerId], references: [id])
+  
+  @@unique([matchId, bookmakerId, marketType, outcome])
+  @@index([matchId, marketType])
+  @@map("odds")
+}
+
+enum MatchStatus {
+  UPCOMING
+  LIVE
+  FINISHED
+  POSTPONED
+  CANCELLED
+}
+
+enum MarketType {
+  ONE_X_TWO        // 1X2 (Home/Draw/Away)
+  BOTH_TEAMS_SCORE // Both Teams to Score (Yes/No)
+  OVER_UNDER_25    // Over/Under 2.5 Goals
+  OVER_UNDER_15    // Over/Under 1.5 Goals
+  OVER_UNDER_35    // Over/Under 3.5 Goals
+  CORRECT_SCORE    // Correct Score
+  DOUBLE_CHANCE    // Double Chance (1X, 12, X2)
+  FIRST_GOALSCORER // First Goalscorer
+  ANYTIME_GOALSCORER // Anytime Goalscorer
+}

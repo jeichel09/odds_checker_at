@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/football/bundesliga/page": "app/football/bundesliga/page.js",
+  "/football/oe2/page": "app/football/oe2/page.js",
+  "/leagues/oesterreichische-bundesliga/page": "app/leagues/oesterreichische-bundesliga/page.js"
+}

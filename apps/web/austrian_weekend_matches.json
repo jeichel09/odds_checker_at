@@ -1,0 +1,188 @@
+{
+    "source":  "RapidAPI - Free Live Football Data",
+    "leagueName":  "Austrian Bundesliga",
+    "timestamp":  "2025-10-11T10:06:40Z",
+    "weekendMatches":  [
+                           {
+                               "id":  "4832228",
+                               "pageUrl":  "/matches/grazer-ak-vs-hartberg/3bwbnm#4832228",
+                               "opponent":  {
+                                                "id":  "10012",
+                                                "name":  "Grazer AK",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "10012",
+                                            "name":  "Grazer AK",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "10056",
+                                            "name":  "Hartberg",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-18T15:00:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           },
+                           {
+                               "id":  "4832232",
+                               "pageUrl":  "/matches/wolfsberger-ac-vs-ried/16nxhk#4832232",
+                               "opponent":  {
+                                                "id":  "1954",
+                                                "name":  "Wolfsberger AC",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "1954",
+                                            "name":  "Wolfsberger AC",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "10017",
+                                            "name":  "Ried",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-18T15:00:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           },
+                           {
+                               "id":  "4832231",
+                               "pageUrl":  "/matches/wsg-tirol-vs-austria-wien/140pl2#4832231",
+                               "opponent":  {
+                                                "id":  "1583",
+                                                "name":  "WSG Tirol",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "1583",
+                                            "name":  "WSG Tirol",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "10011",
+                                            "name":  "Austria Wien",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-18T15:00:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           },
+                           {
+                               "id":  "4832227",
+                               "pageUrl":  "/matches/bw-linz-vs-sturm-graz/1a4i7l#4832227",
+                               "opponent":  {
+                                                "id":  "2433",
+                                                "name":  "BW Linz",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "2433",
+                                            "name":  "BW Linz",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "10014",
+                                            "name":  "Sturm Graz",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-19T12:30:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           },
+                           {
+                               "id":  "4832229",
+                               "pageUrl":  "/matches/altach-vs-salzburg/3bc4ok#4832229",
+                               "opponent":  {
+                                                "id":  "10013",
+                                                "name":  "Salzburg",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "10013",
+                                            "name":  "Salzburg",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "10008",
+                                            "name":  "Altach",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-19T12:30:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           },
+                           {
+                               "id":  "4832230",
+                               "pageUrl":  "/matches/lask-vs-rapid-wien/3azoyt#4832230",
+                               "opponent":  {
+                                                "id":  "10015",
+                                                "name":  "Rapid Wien",
+                                                "score":  0
+                                            },
+                               "home":  {
+                                            "id":  "10015",
+                                            "name":  "Rapid Wien",
+                                            "score":  0
+                                        },
+                               "away":  {
+                                            "id":  "9977",
+                                            "name":  "LASK",
+                                            "score":  0
+                                        },
+                               "displayTournament":  true,
+                               "notStarted":  true,
+                               "tournament":  {
+
+                                              },
+                               "status":  {
+                                              "utcTime":  "2025-10-19T15:00:00Z",
+                                              "started":  false,
+                                              "cancelled":  false,
+                                              "finished":  false
+                                          }
+                           }
+                       ],
+    "leagueId":  38
+}
